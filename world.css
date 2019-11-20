@@ -1,1 +1,58 @@
 /* Add your own styles */
+
+th{
+    text-align: left;
+    padding: 5px;
+}
+
+td{
+    padding: 5px;
+}
+
+.header{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-family: 'Roboto','Helvetica', sans-serif;
+    background: grey;
+    color: white;
+    margin-bottom: 10px;
+    
+}
+
+#country{
+    width: 20em;
+    height: 2em;
+    border-radius: 5px;
+    border-color: #FFFFFF;
+}
+
+#controls{
+    margin: 0 auto;
+    text-align: center;
+}
+#lookup{
+    color: #FFFFFF;
+    padding: 6px 16px;
+    background-color:#388E3C;
+    border-color: #388E3C;
+    text-align: center;
+    font-size: 14px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    display: flex; 
+    justify-content: center; 
+    margin-top: 20px;
+    margin: 0 auto;
+}
+
+#result{
+    margin: 0 auto;
+    text-align: center;
+    
+}
+
+.result{
+    margin: 0 auto;
+    text-align: center;
+}

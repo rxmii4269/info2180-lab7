@@ -5,11 +5,8 @@ window.onload = () =>{
     let search = document.getElementById("lookup");
     
     
-    search.addEventListener('click', (e)=>{
+    search.addEventListener('click', ()=>{
         
-        
-        
-       
         
         this.$.ajax({
             type : "GET",
