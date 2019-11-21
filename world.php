@@ -10,7 +10,8 @@ $query2 = filter_var(htmlspecialchars($_GET['context']),FILTER_SANITIZE_STRING);
 $conn = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8mb4", $username, $password);
 
 if ($query2 === "cities"):?>
-<?php $stmt = $conn->query("SELECT c.name, c.district, c.population FROM cities c JOIN countries cs ON c.country_code = cs.code WHERE cs.name = '$query'");
+<?php $stmt = $conn->query("SELECT c.name, c.district, c.population FROM $query2 c JOIN countries cs ON c.country_code = cs.code WHERE 
+cs.name = '$query'");
     $results = $stmt->fetchAll(PDO::FETCH_ASSOC);?>
 
 
